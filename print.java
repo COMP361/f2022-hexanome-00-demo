@@ -1,3 +1,3 @@
 class Print() {
-	System.out.
+	System.out.println("yay";
 }
