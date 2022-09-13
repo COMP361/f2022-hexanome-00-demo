@@ -52,30 +52,7 @@ Board Game Platform (BGP) = Lobby Service + Lobby Service Web UI + Sample Game, 
     * Sample [Lobby Service Web UI](https://github.com/kartoffelquadrat/LobbyServiceWebInterface)
     * Sample Lobby Service compatible [Game (Tic Tac Toe, backend + frontend)](https://github.com/kartoffelquadrat/BgpXox)
 
-#### Illustration of Repositories
-
-Be careful not to confuse *Lobby Service* and *Board Game Platform*.
-
- * The *Lobby Service* is a single RESTful service, and **requirement that is to say mandatory component** of your game implementation.
-    * You just power it up, but don't modify its sources / behaviour.
- * The *Board Game Platform* illustrates how the *Lobby Service* **could** be used. 
-    * It illustrates a generic Lobby UI and a sample integration with a minimal game (Tic Tac Toe).
-    * You are supposed to replace the sample UI by your own implementation.
-    * You are supposed to replace the sample game by Splendor.
- * Here is how these Repositories are arranged on GitHub:  
-
-![github](https://www.cs.mcgill.ca/~mschie3/COMP361/bgp-github.png)
-
-#### Illustration of Containers
-
-While the individual services **could** be powered up individuall, it is convenient to have a configuration that orchestrates startup of the individual components. That can be done with ```docker-compose```.  
-The provided configuration for the sample game (xox) results in the following running containers:  
-![docker](https://www.cs.mcgill.ca/~mschie3/COMP361/bgp-containers.png)
-
- > This illustrates the a WebApp, where Lobby-Service UI and Xox UI are provided by the backend (as web pages). If you decide for a desktop client, your client will not be part of the container layout (Can be starte up on it's own, on a different machine).
-
-You do not need to adjust the container setup, but it may be a good idea to reuse the provided sample configuration. If you replace the xox (sample game part) by your own game container, you have an easy to deploy, reliable setup. (Good for demos)
-
+ > Be careful not to confuse *Lobby Service* and *Board Game Platform*.
 
 ## Authors
 
