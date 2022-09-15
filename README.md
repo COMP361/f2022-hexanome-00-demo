@@ -1,8 +1,6 @@
 # COMP 361 Project
 
-This is a template repo. Your team repo has been forked of this repo.  
-
- > While this template is public, your team repository by default is not. Only your team mates and COMP 361 staff have access.
+ > See also my video instuctions in the screencasts section on MyCourses.
 
 ## The Rules
 
